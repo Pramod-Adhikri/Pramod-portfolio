@@ -1,0 +1,187 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Glassmorphism Effect for Portfolio Cards */
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio Card Title Styling */
+.portfolio-card h3 {
+    color: #000000; /* Black color for portfolio card titles */
+}
+
+/* Service Card Hover Effect */
+.service-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* About Section Styling */
+#about {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+/* Contact Form Input Focus */
+#contact input,
+#contact textarea {
+    color: #000000 !important; /* Ensure typed text is visible */
+}
+
+/* Custom Hero Button Animation */
+.hire-me-button:hover {
+    transform: scale(1.1);
+}
+
+/* Scroll to Top Button */
+#scroll-to-top {
+    opacity: 0.8;
+}
+
+#scroll-to-top:hover {
+    opacity: 1;
+}
+
+/* Active Filter Button */
+.filter-btn.active {
+    background-color: #14b8a6 !important; /* Tailwind's teal-500 */
+}
+
+/* Navigation Hover Color */
+nav a:hover {
+    color: #000000 !important;
+}
+
+/* Portfolio Section Background */
+#portfolio {
+    background: linear-gradient(135deg, #000000);
+    color: #ffffff;
+    padding: 2rem;
+}
+
+/* Services Section Individual Borders */
+.service-card {
+    background: #ffffff; /* White background for cards */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* Get in Touch Section Background */
+#contact {
+    background: linear-gradient(135deg, #000000);
+    color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+}
+#contact input,
+#contact textarea {
+    color: #000000 !important; /* Ensure typed text is visible */
+    display: block; /* Ensure inputs are not hidden */
+    opacity: 1; /* Ensure inputs are fully visible */
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: none; /* Remove default focus outline if needed */
+    border-color: #14b8a6; /* Optional: Add a focus color */
+}
+
+#contact-message {
+    margin-bottom: 1rem;
+}
+
+.text-green-400 {
+    color: #10b981; /* Tailwind green-400 for success message */
+}
+
+.text-red-400 {
+    color: #ef4444; /* Tailwind red-400 for error message */
+}
+#contact label {
+    color: #ffffff !important; /* Ensure labels are white */
+    font-size: 1rem; /* Adjust font size if needed */
+    font-weight: 500; /* Slightly bold for better readability */
+}
+
+#contact input,
+#contact textarea {
+    color: #000000 !important; /* Ensure typed text in inputs is visible (black) */
+    background-color: #ffffff; /* White background for input fields */
+    display: block; /* Ensure inputs are not hidden */
+    opacity: 1; /* Ensure inputs are fully visible */
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #14b8a6; /* Optional: Add a focus color (Tailwind teal-500) */
+}
+
+#contact-message {
+    margin-bottom: 1rem;
+}
+
+.text-green-400 {
+    color: #10b981; /* Tailwind green-400 for success message */
+}
+
+.text-red-400 {
+    color: #ef4444; /* Tailwind red-400 for error message */
+}
+
+/* Style for the navigation links */
+nav a {
+    font-size: 1.1rem; /* Increase font size for better readability */
+    font-weight: 500; /* Medium weight for better prominence */
+    position: relative; /* For the underline effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect with underline */
+nav a:hover {
+    color: #1a1a1a; /* Darker shade for hover (instead of gray-900) */
+}
+
+/* Underline effect on hover using ::after pseudo-element */
+nav a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #1a1a1a; /* Match the hover text color */
+    bottom: -4px; /* Position the underline below the text */
+    left: 0;
+}
+
+/* Active link style (e.g., when on the current section) */
+nav a.active {
+    font-weight: 700; /* Bold for active link */
+    color: #1a1a1a; /* Same dark color for consistency */
+}
